@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ユーザ新規登録画面</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- オリジナルCSS読み込み -->
+    <link href="css/original/common.css" rel="stylesheet">
+    <!-- Jqeryの読み込み -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <!-- BootstrapのJS読み込み -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- レイアウトカスタマイズ用個別CSS -->
+
+  </head>
+  <body>
+
+    <!-- header -->
+    <header>
+      <nav class="navbar navbar-inverse">
+      	<div class="container">
+      		<div class="navbar-header">
+            <a class="navbar-brand" href="userList.html">ユーザ新規登録</a>
+      		</div>
+
+          <ul class="nav navbar-nav navbar-right">
+  						<li class="navbar-text">ユーザ名 さん </li>
+  						<li class="dropdown">
+  							<a href="index.html" class="navbar-link logout-link">ログアウト</a>
+              </li>
+  				</ul>
+      	</div>
+      </nav>
+    </header>
+    <!-- /header -->
+
+    <!-- body -->
+    <div class="container">
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="panel-body">
+            <form method="post" action="#" class="form-horizontal">
+              <div class="form-group">
+                <label for="user-id" class="control-label col-sm-2">ログインID</label>
+                <div class="col-sm-6">
+                  <input type="text" name="user-id" id="user-id" class="form-control" value="id0001" required/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="password" class="control-label col-sm-2">パスワード</label>
+                <div class="col-sm-6">
+                  <input type="password" name="password" id="password" class="form-control" required/>
+                </div>
+              </div>
+              <div class="form-group form-margin">
+                <label for="password-confirm" class="control-label col-sm-2">パスワード(確認)</label>
+                <div class="col-sm-6">
+                  <input type="password" name="password-confirm" id="password-confirm" class="form-control" required/>
+                </div>
+              </div>
+              <div class="form-group form-margin">
+                <label for="user-name" class="control-label col-sm-2">ユーザ名</label>
+                <div class="col-sm-6">
+                  <input type="text" name="user-name" id="user-name" class="form-control" value="田中太郎" required/>
+                </div>
+              </div>
+              <div class="form-group form-margin">
+                <label for="continent" class="control-label col-sm-2">生年月日</label>
+                <div class="row">
+                  <div class="col-sm-5">
+                    <input  type="date" name="birthDate" id="date-start" class="form-control" size="30" value="1989-04-26" required/>
+                  </div>
+              </div>
+              </div>
+
+              <div>
+                <button type="submit" value="検索" class="btn btn-primary center-block form-submit">登録</button>
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-4">
+        <a href="userList.html">戻る</a>
+      </div>
+
+
+    </div>
+  </body>
+</html>
